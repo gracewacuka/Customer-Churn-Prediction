@@ -35,7 +35,7 @@ default_values = [
 ]
 
 # Sidebar setup
-st.sidebar.image("Pic1.png", use_container_width=True)
+st.sidebar.image("pic1.png", use_container_width=True)
 st.sidebar.header("User Inputs")
 
 # Collect user inputs
@@ -58,7 +58,7 @@ input_data = pd.DataFrame([user_inputs])
 # Scale numeric columns
 input_data[scale_vars] = scaler.transform(input_data[scale_vars])
 
-# ------------------- Align input features with model -------------------
+
 # Ensure all dummy columns exist and are in the correct order
 model_features = model.get_booster().feature_names
 for col in model_features:
@@ -68,7 +68,7 @@ for col in model_features:
 input_data = input_data[model_features]  # reorder columns to match model
 
 # App Header
-st.image("Pic2.png", use_container_width=True)
+st.image("pic2.png", use_container_width=True)
 st.title("Customer Churn Prediction")
 
 # Page Layout
@@ -129,4 +129,5 @@ input_data_scaled = input_data[model_features]
 
 
             
+
 
