@@ -35,7 +35,7 @@ default_values = [
 ]
 
 # Sidebar setup
-st.sidebar.image("Pic 1.png", use_container_width=True)
+st.sidebar.image("Pic1.png", use_container_width=True)
 st.sidebar.header("User Inputs")
 
 # Collect user inputs
@@ -68,7 +68,7 @@ for col in model_features:
 input_data = input_data[model_features]  # reorder columns to match model
 
 # App Header
-st.image("Pic 2.png", use_container_width=True)
+st.image("Pic2.png", use_container_width=True)
 st.title("Customer Churn Prediction")
 
 # Page Layout
@@ -129,3 +129,4 @@ input_data_scaled = input_data[model_features]
 
 
             
+
